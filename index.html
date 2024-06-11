@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Security and Waste Reduction App</title>
+    <link rel="stylesheet" href="edu_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Food Security and Waste Reduction</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+       <section id="home" class="hero" style="background-image: url('fd.webp');">
+    <div class="container">
+        <h2>Welcome to the Food Security and Waste Reduction App</h2>
+        <p>Our app connects food donors with food banks and shelters to reduce waste and improve food security.</p>
+        <a href="#download" class="cta-button">Download Now</a>
+    </div>
+</section>
+
+
+        <section id="features" class="container">
+            <h2>Features</h2>
+            <div class="feature">
+                <h3>Real-Time Inventory Management</h3>
+                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c" alt="Inventory management" width="833" height="556">
+                <p>Manage food inventories in real-time to ensure efficient distribution and minimize waste. This feature allows food banks and shelters to keep track of available resources, providing transparency and aiding in effective food management.</p>
+            </div>
+            <div class="feature">
+                <h3>Donation Scheduling</h3>
+                <img src="ds.webp" alt="Donation scheduling" width="833" height="556">
+                <p>Schedule donations and coordinate logistics to streamline the process of food donation. This ensures that food is delivered timely and efficiently, reducing the chances of spoilage and ensuring that those in need receive fresh and healthy food.</p>
+            </div>
+            <div class="feature">
+                <h3>Tracking and Reporting</h3>
+                <img src="tr.jpeg" alt="Tracking and reporting" width="833" height="556">
+                <p>Track food distribution and report on the impact to improve transparency and accountability. Detailed reports provide insights into the effectiveness of the food distribution process, helping to identify areas for improvement and demonstrating the positive impact of the app.</p>
+            </div>
+            <div class="feature">
+                <h3>Educational Resources</h3>
+                <img src="er.jpeg" alt="Educational resources" width="833" height="556">
+                <p>Access resources on reducing food waste and promoting food security in your community. These resources include guides, best practices, and tips on how to minimize food waste, contributing to a more sustainable and food-secure society.</p>
+            </div>
+        </section>
+
+        <section id="benefits" class="container">
+            <h2>Benefits</h2>
+            <div class="benefit">
+                <h3>Reduce Food Waste</h3>
+                <img src="rfw.jpeg" alt="Reduce food waste" width="833" height="556">
+                <p>Help reduce food waste by connecting donors with food banks and shelters. This app ensures that surplus food is redistributed to those in need rather than ending up in landfills, promoting environmental sustainability and reducing hunger.</p>
+            </div>
+            <div class="benefit">
+                <h3>Improve Food Distribution</h3>
+                <img src="ifd.jpeg" alt="Improve food distribution" width="833" height="556">
+                <p>Enhance food distribution to support food-insecure populations. By optimizing the logistics of food donations, the app ensures that food reaches those who need it most, improving food security and health outcomes in vulnerable communities.</p>
+            </div>
+            <div class="benefit">
+                <h3>Community Engagement</h3>
+                <img src="ce.png" alt="Community engagement" width="833" height="556">
+                <p>Engage the community in addressing food security issues and promoting sustainability. The app fosters collaboration among donors, food banks, shelters, and volunteers, creating a network of support and raising awareness about the importance of food security.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Food Security and Waste Reduction App. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for your message!');
+        });
+
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
